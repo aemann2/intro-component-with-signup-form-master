@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,6 +19,36 @@ html {
 body {
   min-height: 100vh;
   font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: url("../images/bg-intro-mobile.png") #ff7a7a;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description {
+  color: white;
+  text-align: center;
+  margin: 5rem 0 4rem 0;
+}
+
+.description__heading {
+  font-size: 1.6rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description__body {
+  margin-top: 1.5rem;
 }
 
 .attribution {

@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// Variables //
+
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$drk-blue: hsl(249, 10%, 26%);
+$gray-blue: hsl(246, 25%, 77%);
+
 // Globals //
 
 html {
@@ -17,6 +27,31 @@ html {
 body {
   min-height: 100vh;
   font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: url('../images/bg-intro-mobile.png') $red;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Main Styles //
+
+.description {
+  color: white;
+  text-align: center;
+  margin: 5rem 0 4rem 0;
+
+  &__heading {
+    font-size: 1.6rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__body {
+    margin-top: 1.5rem;
+  }
 }
 
 .attribution {
