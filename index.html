@@ -4,32 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
-
   <title>Intro component with sign up form</title>
 </head>
 
 <body>
-
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-  but understanding how developers think is invaluable.
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name
-  Last Name
-  Email Address
-  Password
-
-  Claim your free trial
-
-  By clicking the button, you are agreeing to our Terms and Services
-
+  <main>
+    <div class="description">
+      <h1 class="description__heading">Learn to code by watching others</h1>
+      <p class="description__body">See how experienced developers solve problems in real-time. Watching scripted
+        tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class='form'>
+      <button class='form__linkbtn'><span class='form__linkbtn--bold'>Try it free 7 days</span> then $20/mo.
+        thereafter</button>
+      <form class='form__main' action="" method='POST' id='form'>
+        <input class='form__main__fname' type="text" name='fname' placeholder="First Name">
+        <input class='form__main__lname' type="text" name='lname' placeholder="Last Name">
+        <input class='form__main__email' type="email" name='email' placeholder="Email">
+        <input class='form__main__pword' type="password" name='password' placeholder="Password">
+        <button class='form__main__submit' type='submit' form='form' value='submit'>Claim your free trial</button>
+      </form>
+      <footer class='form__footer'>By clicking the button, you are agreeing to our <a class='form__footer__link'>Terms
+          and Services</a></footer>
+    </div>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
