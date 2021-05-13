@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
 
 // Variables //
 
@@ -30,12 +30,17 @@ body {
   font-family: 'Poppins', sans-serif;
   background: url('../images/bg-intro-mobile.png') $red;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 // Main Styles //
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
 
 .description {
   color: white;
@@ -44,17 +49,106 @@ body {
 
   &__heading {
     font-size: 1.6rem;
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
   &__body {
     margin-top: 1.5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form {
+  text-align: center;
+
+  &__linkbtn {
+    color: white;
+    background-color: $blue;
+    border: none;
+    border-radius: 10px;
+    font-weight: 300;
+    padding: 1rem 5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    // fixes font on Chrome
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__main {
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    -webkit-box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.16);
+
+    &__submit {
+      background-color: $green;
+      color: white;
+      border: none;
+      width: 90%;
+      border-radius: 8px;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 500;
+      -webkit-box-shadow: inset 0px -5px 2px 0px rgba(0, 0, 0, 0.14);
+      box-shadow: inset 0px -5px 2px 0px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__main input {
+    width: 90%;
+    font-size: 1rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border: 1px solid $gray-blue;
+    border-radius: 4px;
+
+    &::placeholder {
+      font-family: 'Poppins', sans-serif;
+      color: $drk-blue;
+      padding: 1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+
+  &__footer {
+    font-size: 0.7rem;
+    color: $gray-blue;
+    margin: 1rem 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__link {
+      color: $red;
+      font-weight: 500;
+    }
   }
 }
 
 .attribution {
+  margin: 1rem 0;
   font-size: 11px;
   text-align: center;
 }
