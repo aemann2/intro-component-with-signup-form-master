@@ -157,3 +157,92 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (min-width: 660px) {
+  .main {
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    gap: 4rem;
+  }
+
+  .description {
+    flex: 1;
+    text-align: left;
+
+    &__heading {
+      font-size: 3.5rem;
+      width: 100%;
+      line-height: 4rem;
+    }
+
+    &__body {
+      width: 100%;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+
+  .form {
+    flex: 1;
+
+    &__linkbtn {
+      width: 100%;
+      padding: 2rem 2rem;
+    }
+
+    &__main {
+      &__submit {
+        padding: 1.5rem 2rem;
+      }
+
+      & input {
+        height: 5rem;
+        margin-bottom: 2rem;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $drk-blue;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .form {
+    flex: 1;
+
+    &__linkbtn {
+      font-size: 1.3rem;
+    }
+
+    &__main {
+      &__submit {
+        font-size: 1.2rem;
+      }
+
+      & input {
+        height: 5rem;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+
+        &::placeholder {
+          font-size: 1.2rem;
+        }
+
+        &:focus {
+          outline: none;
+          border: 1px solid $drk-blue;
+        }
+      }
+    }
+  }
+}
