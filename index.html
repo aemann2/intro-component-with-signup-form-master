@@ -20,17 +20,22 @@
     <div class='form'>
       <button class='form__linkbtn'><span class='form__linkbtn--bold'>Try it free 7 days</span> then $20/mo.
         thereafter</button>
-      <form class='form__main' action="" method='POST' id='form'>
+      <form class='form__main' action="/" method='POST' id='form'>
         <input class='form__main__fname' type="text" name='fname' placeholder="First Name">
+        <p class='form__main__error error__fname'>First Name cannot be empty</p>
         <input class='form__main__lname' type="text" name='lname' placeholder="Last Name">
+        <p class='form__main__error error__lname'>Last Name cannot be empty</p>
         <input class='form__main__email' type="email" name='email' placeholder="Email Address">
+        <p class='form__main__error error__email'>Looks like this is not an email</p>
         <input class='form__main__pword' type="password" name='password' placeholder="Password">
+        <p class='form__main__error error__pword'>Password cannot be empty</p>
         <button class='form__main__submit' type='submit' form='form' value='submit'>Claim your free trial</button>
         <footer class='form__footer'>By clicking the button, you are agreeing to our <a class='form__footer__link'>Terms
             and Services</a></footer>
       </form>
 
     </div>
+    <script src='./main.js'></script>
   </main>
   <footer>
     <p class="attribution">

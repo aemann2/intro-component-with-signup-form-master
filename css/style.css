@@ -24,6 +24,10 @@ body {
   background-position: center;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .main {
   height: 100%;
   display: -webkit-box;
@@ -77,10 +81,6 @@ body {
   box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.16);
 }
 
-.form__linkbtn:hover {
-  cursor: pointer;
-}
-
 .form__linkbtn--bold {
   font-weight: 700;
 }
@@ -106,6 +106,19 @@ body {
   font-weight: 500;
   -webkit-box-shadow: inset 0px -5px 2px 0px rgba(0, 0, 0, 0.14);
   box-shadow: inset 0px -5px 2px 0px rgba(0, 0, 0, 0.16);
+}
+
+.form__main__error {
+  display: none;
+  font-size: 0.9rem;
+  color: #ff7a7a;
+  font-style: italic;
+  text-align: right;
+  margin: -1.5rem 1.5rem 0.5rem 0;
+}
+
+.form__main__error:last-of-type {
+  margin: -1.5rem 1.5rem 1rem 0;
 }
 
 .form__main input {
