@@ -3,7 +3,6 @@ const fname = document.querySelector('input[name="fname"]');
 const lname = document.querySelector('input[name="lname"]');
 const email = document.querySelector('input[name="email"]');
 const password = document.querySelector('input[name="password"]');
-const error = document.querySelector('.form__main__error');
 
 function validateEmail(email) {
   const re =
