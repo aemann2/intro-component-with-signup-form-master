@@ -21,14 +21,14 @@
       <button class='form__linkbtn'><span class='form__linkbtn--bold'>Try it free 7 days</span> then $20/mo.
         thereafter</button>
       <form class='form__main' action="/" method='POST' id='form'>
-        <input class='form__main__fname' type="text" name='fname' placeholder="First Name">
+        <input class='form__main__fname' type="text" name='fname' aria-label='First Name' placeholder="First Name">
         <p class='form__main__error error__fname'>First Name cannot be empty</p>
-        <input class='form__main__lname' type="text" name='lname' placeholder="Last Name">
+        <input class='form__main__lname' type="text" name='lname' aria-label='Last Name' placeholder="Last Name">
         <p class='form__main__error error__lname'>Last Name cannot be empty</p>
-        <input class='form__main__email' type="email" name='email' placeholder="Email Address">
+        <input class='form__main__email' type="email" name='email' aria-label='Email' placeholder="Email Address">
         <p class='form__main__error error__email'>Looks like this is not an email</p>
-        <input class='form__main__pword' type="password" name='password' placeholder="Password">
-        <p class='form__main__error error__pword'>Password cannot be empty</p>
+        <input class='form__main__pword' type="password" name='password' aria-label='Password' placeholder="Password">
+        <p class='form__main__error error__password'>Password cannot be empty</p>
         <button class='form__main__submit' type='submit' form='form' value='submit'>Claim your free trial</button>
         <footer class='form__footer'>By clicking the button, you are agreeing to our <a class='form__footer__link'>Terms
             and Services</a></footer>
